@@ -262,7 +262,6 @@ select {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	border-radius: 4%;
-    border:2px solid cyan ;
 	background-color:white;
 }
 .contact_us-form button, .send_me{
@@ -323,7 +322,7 @@ select {
 /* Footer */
 
 footer{
-	background-color: deepskyblue;
+	background-color: cyan;
 	display:flex;
 }
 
@@ -340,11 +339,63 @@ footer{
 }
 
 .footer-content > .footer-item{
-	background-color: red;
+	background-color:cyan;
+
 	width: 20%;
 	text-align: center;
 }
 
 .footer-content .footer-item .footer-p{
 	font-size:0.8rem;
+}
+.footer-content .footer-item .footer-social-box{
+	display: flex;
+}
+.footer-content .footer-item .footer-subscribe .footer-subs-in{
+	width: 180px;
+	height: 30px;
+	background-color: black;
+	border-bottom-left-radius:17px;
+	border-top-left-radius: 17px;
+	color: aqua;
+	padding-left: 15px;
+}
+.footer-content .footer-item .footer-subscribe .footer-subs-button{
+	width: 93px;
+	height: 33px;
+	background-color: black;
+	border:none;
+	color: aqua;
+}
+.footer-content .footer-item .footer-subscribe .footer-subs-button:hover{
+	transition:0.3s;
+	background-color:white;
+	color:aqua;
+}
+.footer-content .footer-item .footer-rubbish p{
+	font-size: 15px;
+	margin-top:10px;
+	padding: 0;
+}
+/*COPY*/
+.copy-right{
+	background-color: black;
+	color: aqua;
+	text-align: center;
+	font-weight: 100;
+	font-size: 15px;
+}
+
+input,textarea {
+	outline:none;
+	border:2px solid transparent;
+}
+
+input:focus,textarea:focus{
+	border-color:aqua;
+}
+.footer-content .footer-item .footer-subscribe .footer-subs-in:hover{
+	background-color: white;
+	border: 2px solid black;
+	color:black;
 }
