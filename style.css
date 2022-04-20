@@ -118,9 +118,17 @@ select {
 	border-color: white;
 	color: aqua;
 }
+.row_2{
+	
+	background-color: black;
+	color: white;
+}
+
 .flip-card-container{
-	width: 300px;
-	height: 100px;
+	margin:10px 10px 10px 20px ;
+	padding-bottom: 20px;
+	width: 350px;
+	height: 80px;
 	perspective: 1000px;
 }
 .flip-card{
@@ -143,11 +151,43 @@ select {
 	align-items: center;
 }
 .flip-card-front{
-	background-color:chartreuse;
-	color: brown;
+	background-color:black;
+	color: white;
+	border:3px dashed aqua;
 }
 .flip-card-back{
-	background-color: blueviolet;
-	color: coral;
+	background-color:white;
+	color: black;
 	transform: rotateY(180deg);
+	border:3px solid aqua;
+}
+.flip-card-back p a{
+	color:black;
+}
+.flip-card-back p a:hover{
+	color:black;
+	text-decoration:underline 2px;
+}
+.col-1-4{
+	gird-area:html;
+}
+.row__2--row1{
+	display: grid;
+	grid-template-areas: 
+	'html html html';
+}
+.row__2--row2{
+	display: grid;
+	grid-template-areas:
+	'html html html';
+	padding-bottom: 40px;
+
+}
+.row_2 h1{
+	
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	font-size: 80px;
+	font-weight: 100;
 }
