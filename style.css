@@ -219,3 +219,89 @@ select {
 	color:black;
 	text-align: center;
 }
+
+.row_4{
+	width:100%;
+	height: 100%;
+	display: grid;
+	background-color: black;
+	text-align: center;
+	color: white;
+    margin: 0;
+	padding: 0;
+}
+.contact_us{
+	width: 100%;
+	height: 100%;
+}
+.contact_us-form{
+	float: left;
+	padding-left: 10px;
+	text-align: left;
+}
+.contact_us-form p, .contact_us-form h2{
+	color: cyan;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+.contact_us-form input,textarea,button{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-radius: 4%;
+    border:2px solid cyan ;
+	background-color:white;
+}
+.contact_us-form button, .send_me{
+	width:200px;
+	height: 50px;
+	margin-bottom: 50px;
+	color: cyan;
+
+}
+.contact_us-form button,.send_me:hover{
+	color: black;
+	background-color: darkturquoise;
+}
+.contact_us h1{
+	font-size: 50px;
+	font-weight: 100;
+	margin-top: 40px;
+}
+.contact_us p{
+	color:white;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+.contact_us_info{
+	margin-top: 200px;
+	margin-right: 100px;
+	float: right;
+	width: 600px;
+	height: 300px;
+	background-color: white;
+	color:black;
+	border:2px solid cyan ;
+	border-radius: 3%;
+}
+.contact_us_info h2{
+	color: aqua;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+.contact_us_info p{
+	color:black;
+	padding: 0;
+	text-align: left;
+}
+.contact_us_info i{
+	padding:5px 5px 5px 5px;
+	margin-left: 20px;
+	;
+}
+.contact_us_info hr{
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
