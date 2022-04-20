@@ -10,17 +10,16 @@
 
 	/* Colors */
 	--dark-color:black;
+	--text-color:white;
 	font-size:16px;
 
 }
 
-/* NAVBAR */
-li, a {
-	font-weight: 500;
-	font-size: 16px;
-	color: white;
+a{
 	text-decoration: none;
+	color:var(--text-color);
 }
+/* NAVBAR */
 header{
 	background-color: var(--dark-color);
 	display:flex;
@@ -28,35 +27,18 @@ header{
 	padding: 10px 10px 10px 0px;
 	
 }
-.nav__links{
-	list-style:none;
-	margin-top: 15px;
+.navbar-container{
+	display: flex;
+	width: 100vw;
+	flex-direction: row;
+	justify-content:flex-end;
+	align-items: flex-end;
+
 }
-.nav__links li {
-	display:inline-block;
-	padding:0px 20px;
-}
-.nav__links li a{
-	transition: all 0.3 ease 0s;
-}
-.nav__links li a:hover{
-	color:cyan;
-}
-select {
-	width: 60px;
-	height: 40px;
-	color: aqua;
-	background-color: var(--dark-color);
-	border-radius: 0%;
-	border:3px dashed aqua;
-	justify-content:center;
-	margin-right:10px;
-	margin-top: 10px;
-}
-.logo{
+.navbar-container .header-logo{
 	width: 200px;
 	height: 60px;
-	float:left;
+	float: left;
 	background:linear-gradient(
 		to right,
 		white 0%,
@@ -65,15 +47,56 @@ select {
 		aqua 100%
 	);
 	max-width:23%;
-	margin-left: 10px;
+	padding-left: 0px;
 	border-radius: 3%;
 }
-.logo p{
+.navbar-container .header-logo p{
 	
 	font-size: 40px;
 	justify-content: center;
 	padding-top: 5px;
 }
+.navbar-container .nav__links .nav-items{
+	font-weight: 500;
+	font-size: 16px;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-container .nav__links {
+	display: flex;
+	height: 100%;
+	list-style:none;
+	margin-top: 15px;
+}
+.navbar-container .nav__links .nav-items {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding:0px 20px;
+}
+.navbar-container .nav__links .nav-items a{
+	transition: all 0.3 ease 0s;
+	vertical-align:middle;
+}
+.navbar-container .nav__links .nav-items a:hover{
+	color:cyan;
+}
+.navbar-container .header_language-sec .language {
+	width: 60px;
+	height: 40px;
+	color: aqua;
+	background-color: var(--dark-color);
+	border:3px dashed aqua;
+	justify-content:center;
+	align-items: center;
+}
+
 
 /* Main  */
 
