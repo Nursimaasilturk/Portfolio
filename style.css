@@ -443,28 +443,53 @@ input:focus,textarea:focus{
 	color:var(--dark-color);
 }
 
-/* Footer Responsive */
+/* Responsive for Phone or smaller devices */
 @media screen and (max-width:680px) {
+
+ 
 	
+
+/* Footer */
 	 footer .footer-content{
 		display:flex;
 		height:auto;
 		flex-direction: column !important;
 		justify-content: center;
 		align-items: center;
+
 	}
 
 	footer .footer-content .footer-item{
 		width:100%;
+		margin:1rem 0;
 	}
-
-	footer .footer-content .footer-item .footer-subscribe{
+	footer .footer-content .footer-item .footer-p{
+		font-size:0.6rem;
+	}
+	footer .footer-content .footer-item .footer-social-box .footer-social-link{
+		font-size:0.6rem;
+	}
+	footer .footer-content .footer-item .footer-subscribe {
 		display:flex;
 		flex-direction: row;
 		justify-content: center;
+	}
+	footer .footer-content .footer-item .footer-subscribe input,
+	footer .footer-content .footer-item .footer-subscribe button{
+			margin:0;
+			padding:0;
 	
 	}
 	
+	footer .footer-content .footer-item .footer-rubbish p{
+		font-size:0.8rem;
+	}
+	/* /END__FOOTER/ */
+	.copy-right{
+		font-size:0.6rem;
+	}
+
+	/* taşmayı düzelttik */
 	.row_3_content,.contact_us_info{
 		width:100%;
 	}
