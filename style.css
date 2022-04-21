@@ -162,7 +162,7 @@ header{
 }
 
 /* My Skills */
-.row_2{
+.skills{
 	
 	background-color: var(--dark-color);
 	color: white;
@@ -212,10 +212,8 @@ header{
 	color:var(--dark-color);
 	text-decoration:underline 2px;
 }
-.col-1-4{
-	gird-area:html;
-}
-.row__2--row1{
+
+.skills__container{
 	display: grid;
 	grid-template-areas: 
 	'html html html';
@@ -227,7 +225,7 @@ header{
 	padding-bottom: 40px;
 
 }
-.row_2 h1{
+.skills h1{
 	
 	text-align: center;
 	padding-top: 15px;
@@ -237,7 +235,7 @@ header{
 }
 
 /* Who am I */
-.row_3{
+.whi{
 	background-image: url(./images/structure.jpg);
 	background-attachment:scroll;
 	background-position: center;
@@ -245,7 +243,7 @@ header{
 	background-size:100%;
 	height: 800px;
 }
-.row_3_content{
+.whi_content{
 	
 	width: 600px;
 	height: 500px;
@@ -253,14 +251,14 @@ header{
 	text-align:right;
 	float: right;
 }
-.row_3 h1{
+.whi h1{
 	font-size: 50px;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: rgb(18, 209, 209);
 	padding-top: 50px;
 		
 }
-.row_3 blockquote, p{
+.whi blockquote, p{
 	padding-top: 30px;
 	color:var(--dark-color);
 	text-align: center;
@@ -447,8 +445,79 @@ input:focus,textarea:focus{
 @media screen and (max-width:680px) {
 
  
+/* Main */
+	.main{
+		height:auto;
+		width:100vw;
+		padding:4rem 0;
+	}
 	
+	.main .main--content .main__titles-container h1{
+		font-size:1.6rem;
+	}
+	.main .main--content .main__titles-container h2{
+		font-size:1.2rem;
+		font-weight: lighter;
+	}
+	.main .main--content .main__buttons-container {
+		display:flex;
+		flex-direction: column;
+		margin:0;
+		padding:0;
+	}
+	.main .main--content .main__buttons-container .main--btn2,
+	.main .main--content .main__buttons-container .main--btn1{
+		margin:12px 0;
+		
+	}
 
+/* /END-MAIN/ */
+
+/* Skills */
+	.skills h1{
+		font-size:1.6rem;
+		font-weight: 900;
+	}
+	.skills .skills__container{
+		display:flex;
+		flex-direction:column;
+	}
+	.skills .skills__container .flip .flip-card-container{
+		margin:0;
+		width:80vw;
+	}
+	.skills .skills__container .flip .flip-card-container .flip-card .flip-card-front,
+	.skills .skills__container .flip .flip-card-container .flip-card .flip-card-back{
+		font-size:0.8rem;
+	}
+/* /END_SKILLS/ */
+
+/* WIA */
+	.whi {
+		width:100vw;
+		min-height:50vh;
+		background-position: center;
+		background-size: cover;
+		margin:0;
+		position: relative;
+		padding:0;
+	}
+	.whi .whi_content{
+		height:auto;
+		margin:0;
+		height: 100%;
+		position:absolute;
+		background:rgba(0,0,0,0.8);
+	}
+	.whi .whi_content h1{
+		font-size:2rem;
+		text-align: center;
+	}
+	.whi *{
+		color:#fff;
+		font-size:0.9rem;
+	}
+/* /END__WIA/ */
 /* Footer */
 	 footer .footer-content{
 		display:flex;
@@ -490,7 +559,7 @@ input:focus,textarea:focus{
 	}
 
 	/* taşmayı düzelttik */
-	.row_3_content,.contact_us_info{
+	.whi_content,.contact_us_info{
 		width:100%;
 	}
 }
